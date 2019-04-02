@@ -5,3 +5,17 @@
 ## О проекте
 
 Шаблон для React`а используя TypeScript
+
+## Использование
+
+```
+npm run dev-server
+```
+
+Запустить webpack-dev-server с hot-reload`ом
+
+```
+npm run build
+```
+
+Для создания bundl`а
