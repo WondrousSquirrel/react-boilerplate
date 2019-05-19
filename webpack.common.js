@@ -28,7 +28,22 @@ module.exports = {
       },
       {
         test: /\.(css|sass|scss)$/,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              ident: "postcss",
+              plugins: [
+                require("autoprefixer")({
+                  browsers: ["> 1%", "last 2 versions"]
+                })
+              ]
+            }
+          },
+          { loader: "sass-loader", options: {} }
+        ]
       },
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
