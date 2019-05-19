@@ -1,5 +1,7 @@
 import { combineReducers } from "redux";
 
-const rootReducer = combineReducers({});
+import errorReducer from "./errorReducer";
+
+const rootReducer = combineReducers({ errorReducer });
 
 export default rootReducer;

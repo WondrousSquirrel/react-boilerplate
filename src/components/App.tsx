@@ -1,12 +1,8 @@
 import * as React from "react";
-import { connect } from "react-redux";
 
 import "./style.scss";
+import routes from "../routes";
 
-const App = () => (
-  <div>
-    <h1>TypeScript and React</h1>;
-  </div>
-);
+const App = () => <div>{routes}</div>;
 
 export default App;
