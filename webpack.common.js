@@ -10,7 +10,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle/[name].bundle.js"
   },
-  devtool: "source-map",
   resolve: {
     extensions: [".js", ".jsx", ".json", ".ts", ".tsx"]
   },
@@ -34,7 +33,8 @@ module.exports = {
           {
             loader: "postcss-loader",
             options: {
-              ident: "postcss"
+              ident: "postcss",
+              plugins: () => [require("autoprefixer")]
             }
           },
           { loader: "sass-loader", options: {} }
