@@ -9,7 +9,7 @@ import App from "./components/App";
 import Store from "./store";
 const { store, persistor } = Store();
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
       <Router>
