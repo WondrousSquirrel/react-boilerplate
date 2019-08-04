@@ -48,5 +48,9 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-persist": "^5.10.0",
     "redux-saga": "^1.0.2"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "ie 10"
+  ]
 }
