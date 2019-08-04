@@ -1,10 +1,7 @@
 import * as React from "react";
 import { Route, Switch } from "react-router-dom";
 
-const RouteLoader = (props: any) => {
-  const Component = React.lazy(() => import(`${props.componentPath}`));
-  return <Component />;
-};
+import RouteLoader from "./routeLoader";
 
 const createRoutes = () => (
   <>
