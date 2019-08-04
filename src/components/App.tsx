@@ -1,3 +1,4 @@
+// root component
 import * as React from "react";
 
 import "./style.scss";

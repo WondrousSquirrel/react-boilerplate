@@ -3,6 +3,8 @@ import { Route, Switch } from "react-router-dom";
 
 import RouteLoader from "./routeLoader";
 
+// TODO: can create HOC for Route component
+
 const createRoutes = () => (
   <>
     <React.Suspense fallback={<div>Loading...</div>}>
